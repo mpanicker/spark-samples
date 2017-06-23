@@ -51,10 +51,10 @@ public class JavaTwitterHashTagJoinSentiments {
 
         // Set the system properties so that Twitter4j library used by Twitter stream
         // can use them to generate OAuth credentials
-        System.setProperty("twitter4j.oauth.consumerKey", "3oEbEvlpsXADUu1oiHcxXD0xU");
-        System.setProperty("twitter4j.oauth.consumerSecret", "W0NYhoIYX6MzFhvZX359oMDOp8gbrP6PKnJkHVOAuDlOy0Tja2");
-        System.setProperty("twitter4j.oauth.accessToken", "258405377-M2Qz4dORELvF2LsoPIt4GT8VLCE5gQZuWqwwBPXf");
-        System.setProperty("twitter4j.oauth.accessTokenSecret", "g2L0ZN4wFEWGW52DTRtNJQBRbsvJzEIHGMArU3verMmEr");
+        System.setProperty("twitter4j.oauth.consumerKey", "");
+        System.setProperty("twitter4j.oauth.consumerSecret", "");
+        System.setProperty("twitter4j.oauth.accessToken", "");
+        System.setProperty("twitter4j.oauth.accessTokenSecret", "");
 
         SparkConf sparkConf = new SparkConf().setAppName("JavaTwitterHashTagJoinSentiments").setMaster("local[4]");
         JavaStreamingContext jssc = new JavaStreamingContext( sparkConf, new Duration(5000));
